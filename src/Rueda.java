@@ -1,23 +1,26 @@
 public class Rueda {
-    private String fabricante;
-    private int aro;
-    private double ancho;
 
-    public Rueda(String fabricante, int aro, double ancho) {
-        this.fabricante = fabricante;
-        this.aro = aro;
-        this.ancho = ancho;
-    }
+  private String fabricante;
 
-    public String getFabricante() {
-        return fabricante;
-    }
+  private int aro;
 
-    public int getAro() {
-        return aro;
-    }
+  private double ancho;
 
-    public double getAncho() {
-        return ancho;
-    }
+  public Rueda(String fabricante, int aro, double ancho) {
+    this.fabricante = fabricante;
+    this.aro = aro;
+    this.ancho = ancho;
+  }
+
+  public String getFabricante() {
+    return fabricante;
+  }
+
+  public int getAro() {
+    return aro;
+  }
+
+  public double getAncho() {
+    return ancho;
+  }
 }

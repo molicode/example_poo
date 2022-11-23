@@ -1,32 +1,34 @@
 public enum TipoAutomovil {
-    SEDAN("Sedan", "Auto mediano", 4),
-    STATION_WAGON("Station Wagon", "Auto grande", 5),
-    HATCHBACK("Hatchback", "Auto compacto", 5),
-    PICKUP("Pickup", "Camioneta", 4),
-    COUPE("Coupé", "Auto pequeño", 2),
-    CONVERTIBLE("Convertible", "Auto deportivo", 2),
-    FURGON("Furgón", "Auto utilitario", 3),
-    SUV("SUV", "Todo terreno deportivo", 5);
+  SEDAN("Sedan", "Auto mediano", 4),
+  STATION_WAGON("Station Wagon", "Auto grande", 5),
+  HATCHBACK("Hatchback", "Auto compacto", 5),
+  PICKUP("Pickup", "Camioneta", 4),
+  COUPE("Coupé", "Auto pequeño", 2),
+  CONVERTIBLE("Convertible", "Auto deportivo", 2),
+  FURGON("Furgón", "Auto utilitario", 3),
+  SUV("SUV", "Todo terreno deportivo", 5);
 
-    private final String nombre;
-    private final int numeroPuerta;
-    private final String descripcion;
+  private final String nombre;
 
-    TipoAutomovil(String nombre, String descripcion, int numeroPuerta) {
-        this.nombre = nombre;
-        this.numeroPuerta = numeroPuerta;
-        this.descripcion = descripcion;
-    }
+  private final int numeroPuerta;
 
-    public String getNombre() {
-        return nombre;
-    }
+  private final String descripcion;
 
-    public int getNumeroPuerta() {
-        return numeroPuerta;
-    }
+  TipoAutomovil(String nombre, String descripcion, int numeroPuerta) {
+    this.nombre = nombre;
+    this.numeroPuerta = numeroPuerta;
+    this.descripcion = descripcion;
+  }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
+  public String getNombre() {
+    return nombre;
+  }
+
+  public int getNumeroPuerta() {
+    return numeroPuerta;
+  }
+
+  public String getDescripcion() {
+    return descripcion;
+  }
 }
