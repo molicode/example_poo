@@ -30,12 +30,12 @@ public class EjemploAutomovilEnum {
       case STATION_WAGON -> System.out.println("Es un automovil más grande, con maleta grande...");
     }
 
-    TipoAutomovil[] tipos = TipoAutomovil.values();
-    for (TipoAutomovil ta : tipos) {
-      System.out.print(ta + " => " + ta.name() + ", " +
-          ta.getNombre() + ", " +
-          ta.getDescripcion() + ", " +
-          ta.getNumeroPuerta());
+    TipoAutomovil[] tipoAutomoviles = TipoAutomovil.values();
+    for (TipoAutomovil tipoAutomovil : tipoAutomoviles) {
+      System.out.print(tipoAutomovil + " => " + tipoAutomovil.name() + ", " +
+          tipoAutomovil.getNombre() + ", " +
+          tipoAutomovil.getDescripcion() + ", " +
+          tipoAutomovil.getNumeroPuerta());
       System.out.println();
     }
 
